@@ -1,6 +1,3 @@
-variable "client_id" {}
-variable "client_secret" {}
-
 variable "node_count" {
     default = 1
 }
@@ -23,17 +20,14 @@ variable location {
 
 variable storage_account_name {
     description = "Name of storage account"
-    default = "<account_name>"
 }
 
 variable container_name {
     description = "Name of container"
-    default = "<container_name>"
 }
 
 variable storgae_account_access_key {
     description = "Access key to the storage account"
-    default = "<storgae_account_access_key>"
 }
 
 variable storage_resource_group_name {
@@ -59,4 +53,8 @@ variable "nginx" {
     containername = "nginx"
     }
   ]
+}
+
+variable "kubeconfig" {
+  type = string
 }

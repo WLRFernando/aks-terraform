@@ -1,0 +1,10 @@
+
+ARM_SUBSCRIPTION_ID
+ARM_TENANT_ID
+ARM_CLIENT_ID
+ARM_CLIENT_SECRET
+
+
+export TF_VAR_storage_account_name=<storage_account_name>
+export TF_VAR_container_name=<container_name>
+export TF_VAR_storgae_account_access_key=<storgae_account_access_key>

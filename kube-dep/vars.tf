@@ -1,6 +1,3 @@
-variable "client_id" {}
-variable "client_secret" {}
-
 variable "node_count" {
     default = 1
 }
@@ -59,4 +56,8 @@ variable "nginx" {
     containername = "nginx"
     }
   ]
+}
+
+variable "kubeconfig" {
+  type = string
 }
