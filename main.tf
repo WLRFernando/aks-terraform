@@ -55,7 +55,7 @@ module "k8s-cluster" {
 
 module "kubernetes-config" {
   depends_on   = [module.aks-cluster]
-  source       = "./kubernetes-config"
+  source       = "./kube-dep"
   cluster_name = var.cluster_name
   kubeconfig   = data.azurerm_kubernetes_cluster.k8s_test.kube_config_raw
 }
