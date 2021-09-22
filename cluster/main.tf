@@ -8,11 +8,11 @@ terraform {
       version = "~>2.0"
     }
   }
-  provider "azurerm" {
-    features {}
-  }
 }
 
+provider "azurerm" {
+    features {}
+}
 resource "azurerm_resource_group" "k8s_resource_group" {
     name     = var.resource_group_name
     location = var.location

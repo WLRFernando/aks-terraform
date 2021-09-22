@@ -17,7 +17,7 @@ terraform {
     resource_group_name = var.storage_resource_group_name
     storage_account_name = var.storage_account_name
     container_name = var.container_name
-    key = "<name of the blob used to Terraform's State file inside the Storage Container.>.microsoft.tfstate"
+    key = var.storage_key
     access_key = var.storgae_account_access_key
   }
 }

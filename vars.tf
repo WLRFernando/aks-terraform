@@ -26,6 +26,10 @@ variable container_name {
     description = "Name of container"
 }
 
+variable storage_key {
+    description = "Name of container"
+}
+
 variable storgae_account_access_key {
     description = "Access key to the storage account"
 }
@@ -47,7 +51,7 @@ variable "nginx" {
   }))
   default = [
     {
-    name    = nginx
+    name    = "nginx"
     replicas = 1
     image = "nginx:1.19.4"
     containername = "nginx"
