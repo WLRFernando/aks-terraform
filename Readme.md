@@ -7,5 +7,6 @@ ARM_CLIENT_SECRET
 
 export TF_VAR_storage_account_name=<storage_account_name>
 export TF_VAR_container_name=<container_name>
-export TF_VAR_storgae_account_access_key=<storgae_account_access_key>
-export TF_VAR_storgae_key=<storgae_key>
+ARM_ACCESS_KEY
+## ACCOUNT_KEY=$(az storage account keys list --resource-group $RESOURCE_GROUP_NAME --account-name $STORAGE_ACCOUNT_NAME --query '[0].value' -o tsv)
+export ARM_ACCESS_KEY=$ACCOUNT_KEY ##

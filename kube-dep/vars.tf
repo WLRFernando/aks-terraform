@@ -28,15 +28,6 @@ variable container_name {
     default = "<container_name>"
 }
 
-variable storage_key {
-    description = "Name of container"
-}
-
-variable storgae_account_access_key {
-    description = "Access key to the storage account"
-    default = "<storgae_account_access_key>"
-}
-
 variable storage_resource_group_name {
     default = "azure-storage"
 }
